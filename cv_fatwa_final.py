@@ -74,8 +74,8 @@ story.append(HRFlowable(width="100%", thickness=1.2, color=DARK, spaceAfter=6))
 story += section("Professional Summary")
 story.append(Paragraph(
     "Senior Full Stack Engineer with <b>5+ years of experience</b> architecting and delivering scalable web, "
-    "mobile, and real-time systems for EU, APAC, and global companies. Specialised in <b>TypeScript, Node.js, "
-    "Next.js, and Flutter</b>, with deep expertise in WebSocket-based architectures, automated trading systems, "
+    "mobile, and real-time systems for EU, APAC, and global companies. Specialised in <b>TypeScript, Javascript, "
+    "Golang, Next.js, and Flutter</b>, with deep expertise in WebSocket-based architectures, automated trading systems, "
     "and cloud-native deployments across <b>AWS, GCP, and Azure</b>. Proven track record of:",
     body_style))
 story.append(bullet("Leading full-stack platforms serving <b>100k+ users</b> with high availability and low latency"))
@@ -97,7 +97,7 @@ block1 = [
     bullet("Developed and scaled backend services using <b>TypeScript (Node.js)</b> and <b>Golang</b>; built modern frontend applications with <b>Next.js</b> and Shadcn UI."),
     bullet("Optimised <b>SQL database</b> schemas and query execution plans for performance and integrity across high-throughput production environments."),
     bullet("Containerised and deployed production workloads on <b>Azure</b> using Docker Compose and automated <b>CI/CD pipelines</b>, ensuring zero-downtime releases."),
-    bullet("Mentored <b>3 engineers</b>, shaping architecture decisions, enforcing code quality standards, and accelerating team delivery velocity."),
+    bullet("Lead and Mentored <b>smart fast learning engineers</b>, shaping architecture decisions, enforcing code quality standards, and accelerating team delivery velocity."),
     Spacer(1, 5),
 ]
 story.append(KeepTogether(block1))
