@@ -62,10 +62,12 @@ story = []
 
 # ── HEADER ───────────────────────────────────────────────────────
 story.append(Paragraph("FATWA ANUGERAH NASIR", name_style))
-story.append(Paragraph("Senior Full Stack Engineer · Remote (APAC, EU &amp; Global)", title_style))
+story.append(Paragraph("Senior Software Engineer · Remote (APAC, EU &amp; Global)", title_style))
 story.append(Paragraph(
-    "Indonesia &nbsp;|&nbsp; fatwaanugerah0421@gmail.com &nbsp;|&nbsp; "
-    "linkedin.com/in/fatwa-anugerah &nbsp;|&nbsp; github.com/fatwaanugerah21",
+    "Indonesia &nbsp;|&nbsp; fatwaanugerah0421@gmail.com",
+    contact_style))
+story.append(Paragraph(
+    "https://fatwa.ftsdigihouse.com &nbsp;|&nbsp; https://linkedin.com/in/fatwa-anugerah &nbsp;|&nbsp; https://github.com/fatwaanugerah21",
     contact_style))
 story.append(Spacer(1, 6))
 story.append(HRFlowable(width="100%", thickness=1.2, color=DARK, spaceAfter=6))
@@ -73,90 +75,87 @@ story.append(HRFlowable(width="100%", thickness=1.2, color=DARK, spaceAfter=6))
 # ── PROFESSIONAL SUMMARY ─────────────────────────────────────────
 story += section("Professional Summary")
 story.append(Paragraph(
-    "Senior Full Stack Engineer with <b>5+ years of experience</b> architecting and delivering scalable web, "
-    "mobile, and real-time systems for EU, APAC, and global companies. Specialised in <b>TypeScript, Javascript, "
-    "Golang, Next.js, and Flutter</b>, with deep expertise in WebSocket-based architectures, automated trading systems, "
-    "and cloud-native deployments across <b>AWS, GCP, and Azure</b>. Proven track record of:",
+    "Senior Software Engineer with 5 years of experience designing and delivering end-to-end software systems "
+    "— from scalable backend services and real-time architectures to production web and mobile applications "
+    "— for global remote teams. Core strength in <b>backend engineering</b>: distributed systems, real-time data "
+    "pipelines, API design, and cloud-native deployments across AWS, Azure, and GCP using <b>Go, TypeScript, "
+    "and Node.js</b>. Complemented by hands-on delivery of full-stack products with "
+    "<b>React.js, Next.js, React Native, and Flutter</b>. Proven track record of:",
     body_style))
-story.append(bullet("Leading full-stack platforms serving <b>100k+ users</b> with high availability and low latency"))
-story.append(bullet("Architecting and maintaining <b>15+ automated trading bots</b> processing hundreds of thousands in monthly trading volume"))
-story.append(bullet("Mentoring engineers and driving architecture decisions across distributed, remote-first teams"))
-story.append(bullet("Delivering cloud-native solutions with <b>CI/CD pipelines</b> on Azure, GCP, and AWS for rapid, reliable deployment"))
-story.append(Spacer(1, 3))
+story += section("Experience")
 
-# ── PROFESSIONAL EXPERIENCE ──────────────────────────────────────
-story += section("Professional Experience")
-
-# Job 1 — Avasosoft
 block1 = [
-    Paragraph("Senior Software Engineer — Avasosoft Technology Solution", job_title_style),
+    Paragraph("Senior Software Engineer — AVASO Technology Solutions", job_title_style),
     Paragraph("Sep 2022 – Feb 2026 &nbsp;|&nbsp; Remote", job_meta_style),
-    bullet("Orchestrated full-stack development across multiple client platforms, architecting systems that scaled to serve <b>100k+ users</b> with high availability."),
-    bullet("Designed, deployed, and maintained <b>15+ automated trading bots</b> processing hundreds of orders per month with hundreds of thousands in monthly trading volume."),
-    bullet("Engineered <b>WebSocket-based real-time infrastructure</b> supporting high concurrent connections with sub-100ms latency, enabling mission-critical live data delivery."),
-    bullet("Developed and scaled backend services using <b>TypeScript (Node.js)</b> and <b>Golang</b>; built modern frontend applications with <b>Next.js</b> and Shadcn UI."),
+    bullet("Designed, deployed, and maintained <b>15+ automated trading bots</b> performing real-time market data ingestion and automated order execution across multiple exchanges, processing <b>$2M+ in monthly trading volume</b>."),
+    bullet("Engineered <b>WebSocket-based real-time infrastructure</b> supporting high concurrent connections with sub-100ms latency, enabling high-frequency data delivery."),
+    bullet("Architected a concurrent backtesting engine leveraging <b>Node.js worker_threads</b> to parallelize strategy simulation across all available CPU cores, processing multi-year OHLCV datasets in a fraction of single-threaded time."),
+    bullet("Designed and developed scalable backend services in <b>TypeScript</b> and <b>Go</b>, handling real-time data streams, order execution, and risk management logic."),
+    bullet("Delivered end-to-end features across the stack — from API design and backend logic to web and mobile interfaces built with <b>React.js, Next.js, React Native, and Flutter</b>."),
     bullet("Optimised <b>SQL database</b> schemas and query execution plans for performance and integrity across high-throughput production environments."),
     bullet("Containerised and deployed production workloads on <b>Azure</b> using Docker Compose and automated <b>CI/CD pipelines</b>, ensuring zero-downtime releases."),
-    bullet("Lead and Mentored <b>smart fast learning engineers</b>, shaping architecture decisions, enforcing code quality standards, and accelerating team delivery velocity."),
+    bullet("Led and mentored a team of engineers, shaping architecture decisions, enforcing code quality standards, and accelerating team delivery velocity."),
     Spacer(1, 5),
 ]
 story.append(KeepTogether(block1))
 
-# Job 2 — SDConnect.VN
+# Job 2 — SDConnect.VN — reorder: backend/infra bullets first
 block2 = [
     Paragraph("Full Stack Developer — SDConnect.VN", job_title_style),
     Paragraph("Jan 2022 – Sep 2022 &nbsp;|&nbsp; Remote", job_meta_style),
-    bullet("Accelerated frontend rendering performance by <b>60%</b>, reducing initial load time from 4s to under 1.5s via code splitting, lazy loading, and asset optimisation using <b>Next.js</b> and React Native."),
-    bullet("Engineered <b>Redis-backed caching layers</b> and query optimisation strategies, reducing average database response time by <b>55%</b> across high-traffic endpoints."),
-    bullet("Streamlined development lifecycle by standardising reusable component libraries and API contracts, reducing feature delivery time by <b>35%</b>."),
+    bullet("Architected <b>Redis-backed caching and query optimisation pipelines</b>, reducing average API response latency by <b>40%</b> and database response time by <b>55%</b> under production load on GCP."),
     bullet("Replaced REST polling with <b>WebSocket-driven communication</b>, enabling sub-100ms real-time data exchange between client and server and eliminating latency bottlenecks."),
-    bullet("Architected <b>Redis-backed caching and query optimisation pipelines</b>, achieving 40% reduction in API response latency under production load on GCP with Docker-based workflows."),
+    bullet("Owned features end-to-end — from API contracts and backend logic to frontend delivery — reducing feature delivery time by <b>35%</b> through standardised reusable component libraries."),
+    bullet("Accelerated frontend rendering performance by <b>60%</b>, reducing initial load time from 4s to under 1.5s via code splitting, lazy loading, and asset optimisation."),
     Spacer(1, 5),
 ]
 story.append(KeepTogether(block2))
 
-# Job 3 — Emolyze.Tech
+# Job 3 — Emolyze.Tech — backend bullets first
 block3 = [
     Paragraph("Junior Full Stack Engineer — Emolyze.Tech", job_title_style),
-    Paragraph("Feb 2021 – Jan 2022 &nbsp;|&nbsp; On-site", job_meta_style),
-    bullet("Constructed an <b>internal analytics dashboard from scratch</b>, delivering real-time visibility into client KPIs and eliminating manual reporting workflows."),
+    Paragraph("Feb 2021 – Jan 2022 &nbsp;|&nbsp; Remote", job_meta_style),
     bullet("Engineered a <b>REST API integration layer from zero</b> to unify third-party data sources into existing client systems, improving data consistency and access speed."),
-    bullet("Developed responsive web applications using <b>Next.js</b> and TailwindCSS; built backend services with Express.js, Redis, and MySQL."),
-    bullet("Deployed and managed applications on <b>AWS</b> using Docker, establishing foundational CI/CD practices for the engineering team."),
+    bullet("Constructed an <b>internal analytics dashboard from scratch</b>, delivering real-time visibility into client KPIs and eliminating manual reporting workflows."),
+    bullet("Built backend services with <b>Express.js, Redis, and MySQL</b>, and developed responsive web applications using <b>Next.js</b> and TailwindCSS."),
+    bullet("Deployed and managed containerized applications on <b>AWS</b> using Docker, while establishing foundational <b>CI/CD pipelines</b> to streamline the engineering team's deployment workflow."),
     Spacer(1, 5),
 ]
 story.append(KeepTogether(block3))
 
 # ── CORE TECHNICAL SKILLS ────────────────────────────────────────
 story += section("Core Technical Skills")
-story.append(skill_row("Languages:",      "TypeScript, JavaScript, Golang, Dart"))
-story.append(skill_row("Frontend:",       "React.js, Next.js, React Native, Flutter, TailwindCSS, Shadcn UI"))
-story.append(skill_row("Backend:",        "Node.js, Express.js, Fastify, REST API, GraphQL, WebSocket, WebRTC"))
-story.append(skill_row("Databases:",      "PostgreSQL, MySQL, Redis, NoSQL, Query Optimisation"))
-story.append(skill_row("Realtime:",       "WebSocket, WebRTC, Concurrent Connections, Background Services, Event-Driven Architecture"))
-story.append(skill_row("Cloud & DevOps:", "AWS, GCP, Azure, Docker, Docker Compose, Kubernetes, GitHub Actions, CI/CD"))
-story.append(skill_row("Infrastructure:", "NGINX, Linux, Container Orchestration, Distributed Systems"))
-story.append(skill_row("API Design:",     "REST, GraphQL, API Contracts, Versioning, Rate Limiting"))
-story.append(skill_row("Tools:",          "Git, Bun, Agile / Scrum, System Architecture"))
+story.append(skill_row("Languages:",        "Go, TypeScript, JavaScript, Java, Python, Dart"))
+story.append(skill_row("Backend & APIs:",   "Gin, Gorm, Node.js, Express.js, Fastify, REST, GraphQL, WebSocket, WebRTC, API Contracts"))
+story.append(skill_row("Frontend & Mobile:","React.js, Next.js, React Native, Flutter, TailwindCSS"))
+story.append(skill_row("Databases:",        "PostgreSQL, MySQL, Redis, NoSQL, Query Optimisation"))
+story.append(skill_row("Architecture:",     "Distributed Systems, Event-Driven, Microservices, Real-time Systems, Concurrent Processing"))
+story.append(skill_row("Cloud & DevOps:",   "AWS, GCP, Azure, Docker, Kubernetes, GitHub Actions, CI/CD, NGINX, Linux"))
+story.append(skill_row("Tools & Process:",  "Git, Bun, Agile / Scrum, Figma"))
 
 # ── KEY PROJECTS ─────────────────────────────────────────────────
 story += section("Key Projects")
+
+story.append(Paragraph("Automated Trading Bot Platform &nbsp;|&nbsp; <i>Go, TypeScript, Node.js, WebSocket, PostgreSQL</i>", project_title))
+story.append(bullet("Designed and maintained a fleet of <b>15+ trading bots</b> with real-time market data ingestion, order execution, and risk management logic across multiple crypto exchanges."))
+story.append(bullet("Built monitoring dashboards and alerting systems to ensure uptime and trading accuracy, processing <b>$2M+ in monthly trading volume</b>."))
+story.append(Spacer(1, 4))
+
+story.append(Paragraph("Backtesting Platform &nbsp;|&nbsp; <i>Node.js, worker_threads, WebSocket, TypeScript, React.js</i>", project_title))
+story.append(bullet("Architected a high-performance backtesting engine utilizing <b>Node.js worker_threads</b> to parallelize strategy simulation across all available CPU cores, processing multi-year OHLCV candle data in a fraction of single-threaded time."))
+story.append(bullet("Built the full-stack platform end-to-end — from the concurrent backend engine to a <b>React.js dashboard</b> with real-time <b>WebSocket</b> streaming of key trading metrics (Sharpe ratio, max drawdown, win rate)."))
+story.append(Spacer(1, 4))
 
 story.append(Paragraph("Privacy Chat App &nbsp;|&nbsp; <i>TypeScript, WebSocket, End-to-End Encryption, Flutter</i>", project_title))
 story.append(Paragraph("github.com/fatwaanugerah21/privacy-chat-app", job_meta_style))
 story.append(bullet("Architected a secure, privacy-first cross-platform chat application (Android &amp; iOS) with end-to-end encrypted messaging."))
 story.append(bullet("Implemented real-time 1-to-1 messaging via <b>WebSocket</b> with <b>FCM push-notification fallback</b> for offline delivery reliability."))
-story.append(Spacer(1, 4))
-
-story.append(Paragraph("Automated Trading Bot Platform &nbsp;|&nbsp; <i>TypeScript, Node.js, Golang, WebSocket</i>", project_title))
-story.append(bullet("Designed and maintained a fleet of <b>15+ trading bots</b> with real-time market data ingestion, order execution, and risk management logic."))
-story.append(bullet("Built monitoring dashboards and alerting systems to ensure uptime and trading accuracy across all active bots."))
 story.append(Spacer(1, 3))
 
 # ── EDUCATION ────────────────────────────────────────────────────
 story += section("Education")
 story.append(Paragraph("Bachelor of Computer Science — Hasanuddin University", job_title_style))
-story.append(Paragraph("2019 – 2023 &nbsp;|&nbsp; GPA: 3.65 / 4.00", job_meta_style))
+story.append(Paragraph("2019 – 2023 &nbsp;|&nbsp; GPA: 3.54 / 4.00", job_meta_style))
 story.append(bullet("Relevant Coursework: Algorithms &amp; Data Structures, Distributed Systems, Database Systems, Software Engineering, Computer Networks"))
 
 # ── LANGUAGES ────────────────────────────────────────────────────
