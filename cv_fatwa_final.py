@@ -77,7 +77,7 @@ story += section("Professional Summary")
 story.append(Paragraph(
     "Someone who brings positive impact to the team through building, collaborating, leading, and architecting — a <b>Senior Software Engineer</b> with more than 5 years of experience designing and delivering end-to-end scalable software systems "
     "from scalable backend microservices and real-time architectures to production web and mobile applications "
-    "for global remote teams. Core strength in <b>backend engineering</b>: experienced with special backend frameworks and tools such as "
+    "for global remote teams. Core strength in <b>backend engineering</b>: experienced with backend frameworks and tools such as "
     "<b>TypeScript, Go, NestJS, Node.js, Gin, Kafka, Redis, Sequelize, Prisma, Drizzle ORM, Gorm</b>. "
     "Complemented by hands-on delivery of full-stack products with frontend frameworks such as <b>React.js, Next.js, React Native, and Flutter</b>. ",
     body_style))
@@ -86,7 +86,10 @@ story += section("Experience")
 block1 = [
     Paragraph("Senior Software Engineer — AVASO Technology Solutions (https://www.linkedin.com/company/avaso-technology-solutions/)", job_title_style),
     Paragraph("Sep 2022 – April 2026 &nbsp;|&nbsp; Remote", job_meta_style),
-    bullet("Designed and developed scalable backend microservices in <b>TypeScript</b> <b>NestJS</b>, handling real-time data streams, built with full test coverage."),
+    bullet("Designed and developed scalable backend microservices in <b>TypeScript</b> with <b>NestJS</b> and <b>Sequelize ORM</b>, handling real-time data streams, built with full test coverage."),
+    bullet("Integrated OpenAI GPT API with custom prompt engineering to screen and rank candidates automatically, reducing manual HR review time"),
+    bullet("Designed a conversational AI pipeline handling dialog between AI and human with context retention via message history management"),
+    bullet("Implemented more than 50 E2E scenarios for Tender Type workflows across NestJS service, message-handler, and API Gateway HTTP layers, covering CRUD, scoped project/organization behavior, validation errors, filtering, pagination, and soft-delete regression cases."),
     bullet("Designed, deployed, and maintained <b>5+ automated trading bots</b> with <b>Go</b> and <b>Gorm</b>, across 3 different trading exchanges, performing real-time market data ingestion and automated order execution, processing <b>$1M+ in monthly trading volume</b>."),
     bullet("Engineered WebSocket infrastructure for trading bot, enabling real-time trade signal delivery across each of the 5+ bots, with sub-second latency for market data ingestion"),
     bullet("Architected a concurrent backtesting engine leveraging <b>Node.js worker_threads</b> to parallelize strategy simulation across all available CPU cores, processing 4 years of OHLCV datasets smoothly."),
@@ -128,7 +131,7 @@ story.append(KeepTogether(block3))
 story += section("Key Projects")
 
 story.append(Paragraph("Ai Recruiter &nbsp;|&nbsp; <i>TypeScript, NestJS, Microservices, WebSocket, Kafka, MongoDB, OpenAI, Puppeteer</i>", project_title))
-story.append(bullet("Built an AI-powered recruiter, with microservices architecture, using Kafka and RabbitMQ for internal communication and notification, MongoDB for data storage, OpenAI for AI chat processing and response, and Puppeteer for web scraping."))
+story.append(bullet("Built an AI-powered recruiter, to reduce HR workload and improve hiring process efficiency, with microservices architecture, using Kafka and RabbitMQ for internal communication and notification, MongoDB for data storage, OpenAI for AI chat processing and response, and Puppeteer for web scraping."))
 story.append(bullet("Built an internal dashboard for the HR Team to manage jobs and candidates, with React.js, Next.js, and TailwindCSS, and using WebSocket."))
 story.append(Spacer(1, 4))
 
@@ -151,12 +154,14 @@ story.append(Spacer(1, 3))
 # ── CORE TECHNICAL SKILLS ────────────────────────────────────────
 story += section("Core Technical Skills")
 story.append(skill_row("Languages:",        "Go, TypeScript, JavaScript, Java, Python, Dart"))
-story.append(skill_row("Backend & APIs:",   "Gin, Gorm, Node.js, Express.js, Fastify, REST, WebSocket, RabbitMQ, Kafka, WebRTC, API Contracts"))
+story.append(skill_row("Backend & APIs:",   "Node.js, Express.js, NestJS, Gin, RESTful API, WebSocket, RabbitMQ, Kafka, WebRTC, API Contracts, Puppeteer (web scraping for AI pipelines)"))
+story.append(skill_row("ORM & Testing:",   "Sequelize, Prisma, Drizzle ORM, Gorm, Jest, E2E Testing, Unit & Integration Testing"))
 story.append(skill_row("Frontend & Mobile:","React.js, Next.js, React Native, Flutter, TailwindCSS"))
 story.append(skill_row("Databases:",        "PostgreSQL, MySQL, Redis, NoSQL, Query Optimisation"))
 story.append(skill_row("Architecture:",     "Distributed Systems, Event-Driven, Microservices, Real-time Systems, Concurrent Processing"))
 story.append(skill_row("Cloud & DevOps:",   "AWS, GCP, Azure, Docker, Kubernetes, GitHub Actions, CI/CD, NGINX, Linux"))
-story.append(skill_row("Tools & Process:",  "Git, Bun, Agile / Scrum, Figma"))
+story.append(skill_row("Tools & Process:",  "Git, Bun, Trello, Notion, Linear, Agile / Scrum, Figma"))
+story.append(skill_row("AI & LLM:",  "OpenAI API, Prompt Engineering, AI-Augmented Development, LLM integration patterns"))
 
 # ── EDUCATION ────────────────────────────────────────────────────
 story += section("Education")
